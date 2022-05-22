@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{    /*tirando margem e preenchimento do navagador*/
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: Work Sans Pro, Consolas, "Courier New";
+}
+
+html, body {
+	width:100vw;
+	height:100vh; 
+	background-image:url('../img/Naruto.jpg');
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position:center;
+}
+
+
+/* estização header */
+header{
+	display: flex;
+	width: 100vw;
+	height:4rem;
+	justify-content: center;
+	align-items: center;
+	font-size:1.4rem;
+	box-shadow: 3px 2px 2px 3px;
+	background: linear-gradient(rgb(215,204,204), rgba(235,162,25));
+	color: black;
+}
+
+/* estização section */
+
+section#imagem {
+	display:flex;
+	width: 100vw;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/* estização imagem */
+section#imagem figure img {
+	margin-top:3rem;
+	width: 20rem;
+	height: 48vh;
+}
+
+
+
+/* estização content */
+
+section#content{
+	display:flex;
+	justify-content: space-evenly;
+	align-items:center;
+	margin-top: 3rem;
+	width: 100vw;
+	height: 10%;
+}
+
+/* estização modo */
+section#content p{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	width:11rem;
+	height:2.8rem;
+	font-size:1.3rem;
+	border: 1px solid black;
+	box-shadow: 2px 2px 2px 2px;
+	background: linear-gradient(rgb(215,204,204), rgba(235,162,25));
+	
+}
+
+/* estização botão */
+
+section#content button {
+	display: flex;
+	justify-content:flex-start;
+	align-items:center;
+	width:5rem;
+	height:2.8rem;
+	font-size: 1.2rem;
+	cursor: pointer;
+	box-shadow: 2px 2px 2px 2px;
+	background: linear-gradient(rgb(215,204,204), rgba(235,162,25));
+}
+
+section#content button:hover{
+	transform: scale(1.1)
+}
+
+
+@media only screen and (max-width:350px){
+	header {
+		font-size:.7rem;
+	}
+
+	section#imagem figure img {
+		width: 18rem;
+	}
+};
+
+
